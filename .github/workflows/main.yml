@@ -37,8 +37,10 @@ jobs:
         name: Setup Node.js
       - name: Install Fantasticon
         run: npm install fantasticon
+      - name: Create release directory
+        run: mkdir release
       - name: Build
-        run: npx fantasticon -o release -p "health-icon" -n "health-icons" healthicons/public/icons/svg
+        run: npx fantasticon -o "./release" -p "health-icon" -n "health-icons" healthicons/public/icons/svg
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
