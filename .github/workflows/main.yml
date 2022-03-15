@@ -38,7 +38,7 @@ jobs:
       - name: Install Fantasticon
         run: npm install fantasticon
       - name: Build
-        run: fantasticon -o release -p "health-icon" -n "health-icons" healthicons/public/icons/svg
+        run: npx fantasticon -o release -p "health-icon" -n "health-icons" healthicons/public/icons/svg
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
