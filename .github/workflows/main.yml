@@ -47,4 +47,5 @@ jobs:
             release/health-icons.eot
             release/health-icons.css
           name: healthicons
+          tag_name: main
       
