@@ -22,9 +22,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checkout build repo
-      - name: Checkout
-        uses: actions/checkout@v3.0.0
       # Checkout health icons. Doesn't have tags so just use latest
       - name: Checkout Health Icons
         uses: actions/checkout@v3.0.0
@@ -49,4 +46,5 @@ jobs:
             release/health-icons.woff
             release/health-icons.eot
             release/health-icons.css
+          name: healthicons
       
